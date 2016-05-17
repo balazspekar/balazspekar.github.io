@@ -1,3 +1,17 @@
+#timeLineYear {
+    color: firebrick;
+    font-size: small;
+    font-weight: bold;
+}
+
+#resumeName {
+    color: firebrick;
+    font-weight: bold;
+}
+
+.progress {background: rgba(245, 245, 245, 1); border: 2px solid rgba(245, 245, 245, 1); border-radius: 5px; height: 6px;}
+.progress-bar-custom {background: firebrick;}
+
 #myLeftColumn {
     padding-left: 0;
 }
