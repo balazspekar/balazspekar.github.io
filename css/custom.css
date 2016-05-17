@@ -1,7 +1,23 @@
+table {
+    border-color: black;
+    border: 1px solid;
+}
+
+table a:link {
+    font-weight: bold;
+}
+
+th {
+    background-color: firebrick;
+    color: white;
+}
+
+
+
 #timeLineYear {
     color: firebrick;
-    font-size: small;
-    font-weight: bold;
+    font-weight: 500;
+
 }
 
 #resumeName {
@@ -21,9 +37,10 @@
 }
 
 #avatarImg {
-    margin-top: 11px;
-    border: 3px solid;
-    border-color: firebrick;
+    margin-top: 25px;
+    border: 1px solid;
+    border-color: black;
+    background: firebrick;
 }
 
 a {

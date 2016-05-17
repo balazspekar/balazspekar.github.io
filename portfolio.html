@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Home - balazspekar.github.io</title>
+    <title>Portfolio - balazspekar.github.io</title>
     <!-- Bootstrap core CSS -->
     <link href="css/cosmo-bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -30,9 +30,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse navbar-right">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -41,30 +41,48 @@
 
 <div class="container">
 
-    <div class="content col-md-5" id="myLeftColumn">
-        <a href="resume.html"><img src="img/avatar.jpg" alt="Balazs Pekar" class="img-rounded img-responsive" id="avatarImg" /></a>
+
+
+    <div class="container row">
+        <h1>Portfolio</h1>
+        <p class="lead">Here are a small collection of my work.</p>
+
+        <table class="table table-striped table-hover ">
+            <thead>
+            <tr>
+                <th>Project</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="https://github.com/balazspekar/MVK-TimeTable-Xamarin" target="_blank">TimeTable</a></td>
+                <td>Public transport TimeTable written in Xamarin, C#</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/balazspekar/arduino-oop-sample" target="_blank">Arduino OOP Sample</a></td>
+                <td>A short sample code on how to define classes and instantiate objects with the Arduino development board</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/balazspekar/arduino-delimited-string-splitter" target="_blank">Arduino String Splitter</a></td>
+                <td>Split text with delimiters into an array</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="content col-md-7" id="myRightColumn">
-        <h1>Hi! My name is Balázs and I'm a junior software developer at Codecool.</h1>
-        <p class="lead">And I am looking for an awesome company to work with.</p>
-        <h2>Who am I? And What's Codecool?</h2>
-        <p>I thought you'd never ask. <a href="http://codecool.com/" title="Codecool" target="_blank">Codecool</a>
-            is a brand new school in the software field founded by experienced IT professionals.
-            Their mission is to train programmers with project experience just in 18 months. It happens to be a place
-            where pretty much anyone can learn computer programming.</p>
-        <p>Me? I'm one of their students and I try to learn as much as possible while I'm there. I'm already familiar with
-            managed languages like Java, C# and did some programming in C and in Python on my own. I also started to get the hang of
-            building websites with HTML, CSS and JavaScript.</p>
-        <p>Since I have a good understanding of how computers work I can find solutions to everyday problems real fast. Afterall,
-            I love getting involved in all aspects of product development.</p>
-        <p>Feel free to take a look at my <a href="resume.html" title="Resume">resume</a> and don't forget to check out my
-            <a href="portfolio.html" title="Portfolio">portfolio</a> as well. If you have any questions please head over
-            to the <a href="contact.html" title="Contacts">contact page</a> and leave me a message. Tak to you soon!</p>
+    <div class="container row">
+        <h1>Profiles on IT related sites</h1>
+        <p class="lead">Please check out my profiles on these websites as well.</p>
+        <a href="http://github.com/balazspekar/" target="_blank" class="btn btn-default">GitHub</a>
+        <a href="https://app.pluralsight.com/id/profile/balazs-pekar" target="_blank" class="btn btn-default">Pluralsight</a>
+        <a href="http://stackexchange.com/users/7123007/peba" target="_blank" class="btn btn-default">StackExchange</a>
+        <a href="https://checkio.org/user/peba0706/" target="_blank" class="btn btn-default">CheckIO</a>
+        <a href="https://www.codecademy.com/chipRunner84170" target="_blank" class="btn btn-default">Codecademy</a>
+
+
 
     </div>
-
-
 
 
 </div><!-- /.container -->
