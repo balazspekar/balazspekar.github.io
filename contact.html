@@ -44,18 +44,18 @@
     <div class="container" id="myLeftColumn">
         <h1>Got questions?</h1>
         <p class="lead">Use the form below and make sure to share your thoughts with me.</p>
-        <form role="form">
+        <form role="form" action="submission.html" method="post" onsubmit="return validateContactData();">
             <div class="form-group">
-                <label for="name">Your Name: </label>
+                <label for="name">Your Name: (must be longer than 3 characters and less than or equal to 30 characters)</label>
                 <input type="text" class="form-control" placeholder="Kiss László" id="name" />
                 <br />
-                <label for="email">Your E-Mail: </label>
+                <label for="email">Your E-Mail: (you must use a valid email address like username@server.com)</label>
                 <input type="text" class="form-control" placeholder="email@cimed.hu" id="email" />
                 <br />
-                <label for="message">Your Message: </label>
+                <label for="message">Your Message: (must be longer than 20 characters and less than or equal to 500 characters)</label>
                 <textarea class="form-control" rows="5" id="message"></textarea>
                 <br />
-                <button class="btn btn-success" onClick="validateContactData()">Send Message</button>
+                <button class="btn btn-success" type="submit">Send Message</button>
                 <a href="https://www.facebook.com/pekarbalazs" target="_blank" class="btn btn-default" id="facebookBtn">Send me a friend request on Facebook</a>
                 <a href="mailto:balazs.pekar@gmail.com" target="_blank" class="btn btn-default" id="gmailBtn">Send me an email now! balazs.pekar@gmail.com</a>
             </div>
