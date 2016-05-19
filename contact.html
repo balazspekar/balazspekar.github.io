@@ -44,7 +44,8 @@
     <div class="container" id="myLeftColumn">
         <h1>Got questions?</h1>
         <p class="lead">Use the form below and make sure to share your thoughts with me.</p>
-        <form role="form" action="submission.html" method="post" onsubmit="return validateContactData();">
+        <!-- http://stackoverflow.com/questions/12449051/javascript-does-onsubmit-only-execute-when-it-detects-a-return-false -->
+        <form role="form" action="submission.html" method="post" onsubmit="return myApp.ValidateContactData();">
             <div class="form-group">
                 <label for="name">Your Name: (must be longer than 3 characters and less than or equal to 30 characters)</label>
                 <input type="text" class="form-control" placeholder="Kiss László" id="name" />
@@ -56,11 +57,13 @@
                 <textarea class="form-control" rows="5" id="message"></textarea>
                 <br />
                 <button class="btn btn-success" type="submit">Send Message</button>
+
                 <a href="https://www.facebook.com/pekarbalazs" target="_blank" class="btn btn-default" id="facebookBtn">Send me a friend request on Facebook</a>
                 <a href="mailto:balazs.pekar@gmail.com" target="_blank" class="btn btn-default" id="gmailBtn">Send me an email now! balazs.pekar@gmail.com</a>
             </div>
         </form>
 
+        <!--        <button class="btn btn-success" onclick="myApp.ValidateContactData();">TEST</button>  -->
         <br/>
 
     </div>
@@ -78,9 +81,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="js/main.js"></script>
+<script src="js/contactDataValidator.js"></script>
 </body>
 </html>
