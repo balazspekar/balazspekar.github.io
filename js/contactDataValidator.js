@@ -22,7 +22,7 @@
 
     // the message must be longer than 20 chars and less than or equal to 500 chars
     app.MessageIsValid = function(message) {
-        return message.length > 20 && message.length <= 500;
+        return message.length > 10 && message.length <= 1000;
     };
 
     app.ValidateContactData = function() {
@@ -36,13 +36,9 @@
         messageBool = app.MessageIsValid(message.value);
 
         if (nameBool && emailBool && messageBool) {
-            console.log("true branch");
-            alert("You have entered valid data, form is being submitted now.");
-            alert("Since there are no server side scripting yet, you will end up on a 404 for now.");
             return true;
         } else {
-            console.log("false branch");
-            alert("Please use valid data!");
+            alert("Hmm... you should enter valid data. Please re-check and submit again! Thanks.");
             return false;
         }
 
